@@ -1,0 +1,158 @@
+body { 
+    /* Replace the plain color with this */
+    background: url('background.jpg') no-repeat center center fixed; 
+    background-size: cover; /* This makes the image fill the whole screen */
+    
+    color: white; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    padding-top: 50px; 
+}
+
+#welcome-screen button {
+    /* Shape and Size */
+    width: 150px;           /* Makes the button a fixed width */
+    height: 150px;          /* Makes the height match the width for a circle */
+    border-radius: 50%;     /* This is the magic line that creates a circle */
+    
+    /* Gold Theme */
+    background-color: #FFD700; 
+    border: 5px solid #DAA520; /* Thicker border for a nice frame */
+    
+    /* Text Styling */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    
+    /* Centering */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+    /* Animation (optional) */
+    transition: transform 0.2s;
+}
+
+/* Add a hover effect to make it feel interactive */
+#welcome-screen button:hover {
+    transform: scale(1.1); /* Makes the circle grow slightly when hovered */
+    background-color: #DAA520;
+}
+
+/* Target all input fields inside the welcome screen */
+#welcome-screen input {
+    width: 80%;          /* Makes the box wider (80% of the container) */
+    padding: 15px;       /* Makes the box taller and more comfortable to type in */
+    margin: 10px 0;      /* Adds space between the Name and ID boxes */
+    font-size: 18px;     /* Makes the text typed inside larger and readable */
+    border-radius: 8px;  /* Makes the corners rounded */
+    border: 2px solid #ccc; /* Adds a clear border */
+    box-sizing: border-box; /* Ensures padding doesn't push the box outside its container */
+}
+
+#welcome-screen input {
+    /* Change width to 40% for half-size, or 300px for a fixed size */
+    width: 40%;          
+    
+    /* Keep these for a clean look */
+    padding: 15px;       
+    margin: 10px auto;   /* 'auto' helps keep them centered */
+    display: block;      /* Ensures they stack vertically */
+    font-size: 18px;     
+    border-radius: 8px;  
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+h1 {
+    color: #FFD700;        /* Gold color */
+    text-shadow: 2px 2px 4px #000; /* Optional: adds a shadow to make it pop */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 15px; /* Adds space between the buttons */
+    margin-top: 20px;
+    
+}
+
+#options-container button {
+    /* Existing styles you already have */
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #555;
+
+    /* Add these new lines for ivory background and bold text */
+    background-color: #FFFFF0; /* This is the standard "ivory" color */
+    color: black;              /* Makes text black for better contrast on gold */
+    font-weight: bold;         /* Makes the text bold */
+    transition: background-color 0.3s; /* Adds a nice hover effect */
+}
+
+/* Optional: Add a hover effect so it gets slightly darker when touched */
+#options-container button:hover {
+    background-color: #DAA520; /* A darker gold for hover effect */
+}
+
+
+/* Add this to the end of style.css */
+#tool-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    
+    /* Add these lines to give it a gold background */
+    background-color: #FFFFF0; 
+    border: 5px solid #DAA520; /* Optional: adds a nice border frame */
+    padding: 10px;             /* Adds space between the image and the gold edge */
+    border-radius: 15px;       /* Rounds the corners for a professional look */
+}
+
+#timer {
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    /* Optional: This makes the red text pulse if the timer is low */
+    animation: blink 1s linear infinite;
+/* GENERAL SCREEN LAYOUT */
+#passcode-screen,
+#welcome-screen,
+#game-screen {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* INPUT FIELDS */
+#passcode-screen input,
+#welcome-screen input {
+    width: 360px;
+    padding: 18px;
+    font-size: 22px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #8B4513;
+    border-radius: 8px;
+}
+
+/* BUTTONS */
+#passcode-screen button,
+#welcome-screen button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#passcode-screen button:hover,
+#welcome-screen button:hover {
+    background-color: #A0522D;
+}
